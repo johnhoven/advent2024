@@ -1,0 +1,7 @@
+**/Exclude/
+**/Debug/
+**/Release/
+**/obj/
+**/bin/
+**/net9.0/
+Test1.cs
