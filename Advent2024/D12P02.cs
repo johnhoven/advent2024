@@ -81,10 +81,10 @@ public class D12P02
         //}
 
         foreach(var pKey in perimeter){            
-            Console.WriteLine();
+            //Console.WriteLine();
             sides += CountSides(perimeter, pKey, perimterVisited);
         }
-        Console.WriteLine($"Char {searchChar} = {size} x {sides} = {size * sides}");
+        //Console.WriteLine($"Char {searchChar} = {size} x {sides} = {size * sides}");
         return size * sides;
         
     }
@@ -98,14 +98,14 @@ public class D12P02
             //if (sides == 0)
               //  sides++;
 
-            Console.WriteLine($"Perimeter Visited Add  {key.d} - {key.x } , {key.y }");
+            //Console.WriteLine($"Perimeter Visited Add  {key.d} - {key.x } , {key.y }");
             perimterVisited.Add(new D12Position{ d = key.d, x = key.x, y = key.y });
             if (FollowPerimeter(ref key, perimeter)){
                 sides++;
-                Console.WriteLine($"Turned to  {key.d} - {key.x } , {key.y }");
+                //Console.WriteLine($"Turned to  {key.d} - {key.x } , {key.y }");
             }
             else{
-                Console.WriteLine($"Moved d to  {key.d} - {key.x } , {key.y }");
+                //Console.WriteLine($"Moved d to  {key.d} - {key.x } , {key.y }");
             }
 
             if (!perimeter.Contains(key))
