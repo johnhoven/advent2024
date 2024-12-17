@@ -107,9 +107,6 @@ public class D15P02
                  ((directionX != 0) &&   
                 TryMove(x + directionX, y + directionY, directionX, directionY, isCheck) && TryMove(x + directionX, y + directionY + 1, directionX, directionY, isCheck)))){
                 if (!isCheck){
-                    // Commit two movs
-                    //TryMove(x + directionX, y + directionY, directionX, directionY, false);
-                    //TryMove(x + directionX, y + directionY + 1, directionX, directionY, false);
 
                     // Commit my move
                     this.Map[x][y] = '.';
@@ -131,9 +128,6 @@ public class D15P02
             if (((directionY != 0 && TryMove(x + directionX, y + directionY - 1, directionX, directionY, isCheck)) ||
                    ((directionX != 0 && TryMove(x + directionX, y + directionY - 1, directionX, directionY, isCheck) && TryMove(x + directionX, y + directionY, directionX, directionY, isCheck))))){
                 if (!isCheck){
-                    // Commit two movs
-                   // TryMove(x + directionX, y + directionY - 1, directionX, directionY, false);
-                    //TryMove(x + directionX, y + directionY, directionX, directionY, false);
 
                     // Commit my move
                     this.Map[x][y] = '.';
